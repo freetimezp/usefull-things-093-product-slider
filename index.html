@@ -1,70 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./assets/css/style.css" />
+        <title>Project</title>
+    </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <title>Project</title>
-</head>
+    <body>
+        <div class="container">
+            <video muted loop autoplay>
+                <source src="./assets/videos/bg.mp4" />
+            </video>
+            <nav>
+                <div id="logo">Val Duca</div>
+                <div id="toggleOverlay">Catalog</div>
+            </nav>
 
-<body>
-    <div class="container">
-        <nav>
-            <div id="logo">Val Duca</div>
-            <div id="toggleOverlay">Catalog</div>
-        </nav>
+            <div class="title">Classic Cuvees</div>
+        </div>
 
-        <div class="title">Classic Cuvees</div>
-    </div>
+        <div class="wines">
+            <div class="wrapper">
+                <svg class="transition" width="100vw" height="100vh" viewBox="0 0 100 100" preserveAspectRatio="none">
+                    <path
+                        class="path"
+                        stroke="#36301D"
+                        fill="#36301D"
+                        stroke-width="2px"
+                        vector-effect="non-scaling-stroke"
+                    />
+                    <animateMotion dur="10s" repeatCount="indefinite">
+                        <mpath xlink:href="#path" />
+                    </animateMotion>
+                </svg>
 
-    <div class="wines">
-        <div class="wrapper">
-            <svg class="transition" width="100vw" height="100vh" viewBox="0 0 100 100" preserveAspectRatio="none">
-                <path class="path" stroke="#36301D" fill="#36301D" stroke-width="2px"
-                    vector-effect="non-scaling-stroke" />
-                <animateMotion dur="10s" repeatCount="indefinite">
-                    <mpath xlink:href="#path" />
-                </animateMotion>
-            </svg>
-
-            <div id="wrap">
-                <div class="block">
-                    <div class="product">
-                        <img src="./assets/images/bottle-1.png" alt="">
+                <div id="wrap">
+                    <div class="block">
+                        <div class="product">
+                            <img src="./assets/images/bottle-1.png" alt="" />
+                        </div>
                     </div>
-                </div>
-                <div class="block">
-                    <div class="product">
-                        <img src="./assets/images/bottle-2.png" alt="">
+                    <div class="block">
+                        <div class="product">
+                            <img src="./assets/images/bottle-2.png" alt="" />
+                        </div>
                     </div>
-                </div>
-                <div class="block">
-                    <div class="product">
-                        <img src="./assets/images/bottle-3.png" alt="">
+                    <div class="block">
+                        <div class="product">
+                            <img src="./assets/images/bottle-3.png" alt="" />
+                        </div>
                     </div>
-                </div>
-                <div class="block">
-                    <div class="product">
-                        <img src="./assets/images/bottle-4.png" alt="">
+                    <div class="block">
+                        <div class="product">
+                            <img src="./assets/images/bottle-4.png" alt="" />
+                        </div>
+                    </div>
+                    <div class="block">
+                        <div class="product">
+                            <img src="./assets/images/bottle-1.png" alt="" />
+                        </div>
+                    </div>
+                    <div class="block">
+                        <div class="product">
+                            <img src="./assets/images/bottle-2.png" alt="" />
+                        </div>
+                    </div>
+                    <div class="block">
+                        <div class="product">
+                            <img src="./assets/images/bottle-3.png" alt="" />
+                        </div>
+                    </div>
+                    <div class="block">
+                        <div class="product">
+                            <img src="./assets/images/bottle-4.png" alt="" />
+                        </div>
                     </div>
                 </div>
             </div>
+
+            <button id="closeBtn">Close</button>
         </div>
 
-
-        <button id="closeBtn">
-            Close
-        </button>
-    </div>
-
-
-
-
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.7/gsap.min.js"></script>
-    <script src="./assets/js/main.js"></script>
-</body>
-
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.7/gsap.min.js"></script>
+        <script src="./assets/js/main.js"></script>
+    </body>
 </html>
